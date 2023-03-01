@@ -18,16 +18,16 @@
 
 <div class="wrapper flex flex-col h-screen">
     <div class="card mx-auto my-40 w-80 flex flex-row 
-    { isCardGenerated === true ? 'rounded-lg border-gray-800 border-solid border-2' : ''}" 
+    { isCardGenerated === true ? 'rounded-lg border-gray-800 border-solid border-2 bg-white' : ''}" 
     style="color: {cardColor}">
-        <div class="left-side flex flex-col">            
-            <div class="top-number absolute ml-3">{number}</div>
-            <div class="top-suit absolute ml-3 pt-10">{suit}</div>
+        <div class="left-side">            
+            <div class="top-number text-center ml-2">{number}</div>
+            <div class="top-suit text-center ml-2">{suit}</div>
         </div>
-        <div class="middle flex flex-grow"></div>
-        <div class="right-side flex flex-col">
-            <div class="bottom-suit absolute mr-4">{suit}</div>
-            <div class="bottom-number mr-3 pb-10 bottom-0">{number}</div>
+        <div class="middle flex-grow"></div>
+        <div class="right-side">
+            <div class="bottom-suit text-center mr-2">{suit}</div>
+            <div class="bottom-number text-center mr-2">{number}</div>
         </div>
     </div>
     <div class="button-area mx-auto mt-52">
@@ -45,11 +45,9 @@
         height: 450px;
     }
     .bottom-suit {
-        margin-top: 325px;
         transform: rotate(180deg);
     }
     .bottom-number {
-        margin-top: 325px;
         transform: rotate(180deg);
     }
 
