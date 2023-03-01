@@ -16,7 +16,6 @@
     
 </script>
 
-
 <div class="wrapper flex flex-col h-screen">
     <div class="card mx-auto my-40 w-80 flex flex-row 
     { isCardGenerated === true ? 'rounded-lg border-gray-800 border-solid border-2' : ''}" 
